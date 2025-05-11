@@ -40,6 +40,7 @@
     - O que é modelagem de banco de dados?
     - Diferenças entre modelo conceitual, lógico e físico
     - Modelando um banco de dados na prática
+- [Scripts SQL](https://github.com/kterra/Inteli-2025-1B/tree/main/semana03/praticaCRUD.sql)
 
 
 ### Semana 4
