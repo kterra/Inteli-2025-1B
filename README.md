@@ -17,7 +17,6 @@
 
 ### Semana 2
 - Instrução 2: Banco de Dados I - Conceitos, Modelos e SQL Básico;
-  - [Scripts SQL](https://github.com/kterra/Inteli-2025-1B/tree/main/semana02/schema_bd.sql)
   - Tópicos da instrução:
     - Parte 1: Introdução teórica
       - Motivação: Banco de dados no contexto do projeto
@@ -30,7 +29,7 @@
       - Sintaxe básica de uma consulta SQL
       - Conexão no banco de dados com Supabase
       - Consultas SQL na prática
-
+      - [Scripts SQL](https://github.com/kterra/Inteli-2025-1B/tree/main/semana02/schema_bd.sql)
 
 ### Semana 3
 - Instrução 3: Banco de Dados II - Create, Read, Update, Delete;
