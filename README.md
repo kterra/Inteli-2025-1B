@@ -30,6 +30,8 @@
       - Conexão no banco de dados com Supabase
       - Consultas SQL na prática
       - [Scripts SQL](https://github.com/kterra/Inteli-2025-1B/tree/main/semana02/schema_bd.sql)
+- Atividade ponderada 1 - Projeto Individual (COMP Parte 1)
+    - [Orientações](https://github.com/InteliContent/ponderadaM2-B/blob/main/Comp_Ponderada1.md)
 
 ### Semana 3
 - Instrução 3: Banco de Dados II - Create, Read, Update, Delete;
