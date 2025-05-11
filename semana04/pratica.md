@@ -58,11 +58,7 @@ PORT=3000
 
 ### `init.sql` - Criação da tabela no banco
 
-Script SQL que pode ser executado diretamente no banco para criar a tabela `usuarios`.
-
-```sql
-Erro ao ler: [Errno 2] No such file or directory: 'mvc-boilerplate-main/init.sql'
-```
+Script SQL que pode ser executado diretamente no banco para criar a tabela `aluno`.
 
 ---
 
@@ -251,6 +247,7 @@ Renderiza a interface de cadastro e listagem de alunos.
 1. Inicie o servidor:
 
 ```bash
+npm run init-db
 node app.js
 ```
 
