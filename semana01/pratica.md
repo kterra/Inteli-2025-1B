@@ -1,87 +1,47 @@
-# Prática Guiada na pasta `/src`
+# Prática Guiada 
 
-## Passo 1: Inicializar o Projeto com npm
+# Execução do Boilerplate MVC em Node.js com PostgreSQL
 
-Abra o terminal e navegue até a pasta do seu projeto. Em seguida, execute o comando:
 
-`npm init`
+## Instalação
 
-Preencha as informações solicitadas ou pressione Enter para usar os valores padrão. Isso criará um arquivo `package.json` na pasta do seu projeto.
+1. **Clonar o repositório:**
 
-## Passo 2: Instalar Dependências
-
-Para um servidor básico, você precisará do Express.js. Instale-o usando npm:
-
-`npm install express`
-
-## Passo 3: Criar o Arquivo `server.js`
-
-Agora, crie um arquivo chamado `server.js` na raiz da pasta do seu projeto e adicione o seguinte código:
-
-```jsx
-const express = require('express');
-const app = express();
-const PORT = 3000;
-
-app.use(express.json()); *// Middleware para lidar com JSON// Rota de teste*
-app.get('/', (req, res) => {
-    res.send('Servidor Node.js funcionando!');
-});
-
-*// Iniciar o servidor*
-app.listen(PORT, () => {
-    console.log(`Servidor rodando na porta ${PORT}`);
-});
+```bash
+   git clone https://github.com/afonsobrandaointeli/mvc-boilerplate.git
+   cd mvc-boilerplate
 ```
 
-## Passo 4: Executar o Servidor
-
-Para iniciar o servidor, execute o seguinte comando no terminal:
-
-`node server.js`
-
-Agora, você pode acessar o servidor em `http://localhost:3000/` no seu navegador.
-
-## Adicionar Script no `package.json`
-
-Para facilitar o início do servidor, você pode adicionar um script no arquivo `package.json`. Abra o arquivo e adicione a seguinte linha na seção `scripts`:
-
-```yaml
-"scripts": {
-  "start": "node server.js"
-},
+2. **Instalar as dependências:**
+    
+```bash
+npm install
 ```
+    
+3. **Configurar o arquivo `.env`:**
+    
+Renomeie o arquivo `.env.example` para `.env` e configure as variáveis de ambiente necessárias, como as configurações do banco de dados PostgreSQL.
+    
 
-Depois disso, você pode iniciar o servidor com:
+Configuração do Banco de Dados
+------------------------------
 
-`npm start`
-
-Pronto! Você tem uma aplicação Node.js básica funcionando. 😊
-
-## Exemplo Completo do `package.json`
-
-Seu arquivo `package.json` deve ter algo parecido com isso após a instalação do Express:
-
-```yaml
-{
-  "name": "nome-do-projeto",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2"
-  }
-}
+1. **Criar banco de dados:**
+    
+    Crie um banco de dados PostgreSQL com o nome especificado no seu arquivo `.env`.
+    
+2. **Executar o script SQL de inicialização:**
+    
+```bash
+npm run init-db
 ```
+    
+Isso criará a tabela `users` no seu banco de dados PostgreSQL com UUID como chave primária e inserirá alguns registros de exemplo.
+    
+Scripts Disponíveis
+-------------------
 
-Substitua `"nome-do-projeto"` pelo nome que você escolheu durante o `npm init`.
-
----
-
-Mas se você quiser se adiantar, temos o nosso boilerplate: https://github.com/afonsobrandaointeli/mvc-boilerplate
+* `npm start`: Inicia o servidor Node.js.
+* `npm run dev`: Inicia o servidor com `nodemon`, reiniciando automaticamente após alterações no código.
+* `npm run test`: Executa os testes automatizados.
+* `npm run test:coverage`: Executa os testes e gera um relatório de cobertura de código.
