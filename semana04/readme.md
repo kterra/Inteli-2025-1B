@@ -1,8 +1,14 @@
-# 📘 Projeto Node.js MVC com PostgreSQL
+# Parte 1: Praticando JOINS
 
-Este projeto demonstra a estrutura básica de uma aplicação Node.js utilizando o padrão MVC (Model-View-Controller) com conexão a um banco de dados PostgreSQL.
+## Desafio
+- [Script SQL]((https://github.com/kterra/Inteli-2025-1B/tree/main/semana04/pratica.sql)
+1. Listar todos os alunos e o nome do curso em que estão matriculados;
 
-O objetivo é fornecer um exemplo simples e didático, ideal para iniciantes em backend e APIs REST.
+2. Encontrar alunos que não estão matriculados em nenhum curso;
+
+3. Listar todos os cursos, mostrando quantos alunos estão matriculados em cada um;
+
+# Parte 2: Projeto Node.js MVC com PostgreSQL
 
 ## Estrutura do Projeto
 
