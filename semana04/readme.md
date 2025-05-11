@@ -1,7 +1,7 @@
 # Praticando JOINS
 
 ## Desafio
-- [Script SQL]((https://github.com/kterra/Inteli-2025-1B/tree/main/semana04/pratica.sql)
+- [Script SQL](https://github.com/kterra/Inteli-2025-1B/tree/main/semana04/pratica.sql)
 1. Listar todos os alunos e o nome do curso em que estão matriculados;
 
 2. Encontrar alunos que não estão matriculados em nenhum curso;
