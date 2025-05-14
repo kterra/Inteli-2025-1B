@@ -1,15 +1,15 @@
+CREATE TABLE IF NOT EXISTS  curso  (
+    id INT PRIMARY KEY,
+    nome VARCHAR(100),
+    descricao VARCHAR(400)
+);
+
 CREATE TABLE IF NOT EXISTS aluno (
     id INT PRIMARY KEY,
     nome VARCHAR(100),
 	idade INT,
 	curso_id INT,
 	FOREIGN KEY (curso_id) REFERENCES curso(id)
-);
-
-CREATE TABLE IF NOT EXISTS  curso  (
-    id INT PRIMARY KEY,
-    nome VARCHAR(100),
-    descricao VARCHAR(400)
 );
 
 -- Inserção de 5 cursos
