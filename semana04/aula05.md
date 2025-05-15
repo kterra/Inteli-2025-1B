@@ -15,9 +15,9 @@ projeto/
 ├── controllers/
 │   └── professorController.js
 ├── models/
-│   └── professor.js
+│   └── professorModel.js
 ├── routes/
-│   └── professores.js
+│   └── professorRputes.js
 ├── views/
 │   └── professores/
 │       └── index.ejs
@@ -44,7 +44,7 @@ CREATE TABLE professor (
 
 ## Passo a Passo
 
-### 1️⃣ Criar o Model: `models/professor.js`
+### 1️⃣ Criar o Model: `models/professorModel.js`
 
 ```js
 const db = require('../config/db');
@@ -86,7 +86,7 @@ module.exports = {
 ### 2️⃣ Criar o Controller: `controllers/professorController.js`
 
 ```js
-const Professor = require('../models/professor');
+const Professor = require('../models/professorModel');
 
 // Listar todos os professores
 exports.index = async (req, res) => {
@@ -119,7 +119,7 @@ exports.delete = async (req, res) => {
 
 ---
 
-### 3️⃣ Criar as Rotas: `routes/professores.js`
+### 3️⃣ Criar as Rotas: `routes/professorRoutes.js`
 
 ```js
 const express = require('express');
@@ -187,11 +187,11 @@ module.exports = router;
 
 ### 5️⃣ Registrar a Rota no `app.js`
 
-No arquivo principal do seu projeto (geralmente `app.js` adicione:
+No arquivo principal do seu projeto (geralmente `app.js` adicione):
 
 ```js
-const professoresRoutes = require('./routes/professores');
-app.use('/professores', professoresRoutes);
+const professoreRoutes = require('./routes/professorRoutes');
+app.use('/professores', professorRoutes);
 ```
 
 ---
