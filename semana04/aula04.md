@@ -88,7 +88,7 @@ CREATE INDEX IF NOT EXISTS idx_aluno_email ON aluno (email);
 
 ---
 
-## 📁 Arquivo `models/aluno.js`
+## 📁 Arquivo `models/alunModel.js`
 
 Responsável por interagir diretamente com o banco de dados Supabase:
 
@@ -127,7 +127,7 @@ module.exports = {
 Controla o fluxo de dados entre o model e a view.
 
 ```javascript
-const Aluno = require('../models/aluno');
+const Aluno = require('../models/alunoModel');
 
 exports.index = async (req, res) => {
   const alunos = await Aluno.findAll();
@@ -154,7 +154,7 @@ exports.destroy = async (req, res) => {
 
 ---
 
-## 📁 Arquivo `routes/alunos.js`
+## 📁 Arquivo `routes/alunoRoutes.js`
 
 Define as rotas para as operações CRUD.
 
@@ -181,7 +181,7 @@ Configura o servidor Express e integra todas as rotas.
 const express = require('express');
 const app = express();
 const path = require('path');
-const alunosRoutes = require('./routes/alunos');
+const alunosRoutes = require('./routes/alunoRoutes');
 const bodyParser = require('body-parser');
 require('dotenv').config();
 
